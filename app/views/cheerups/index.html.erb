@@ -1,2 +1,10 @@
 <h1>Cheerups#index</h1>
 <p>Find me in app/views/cheerups/index.html.erb</p>
+<ul>
+ <% @cheerups.each do |cheerup| %>
+  <li>
+    <!-- <%= cheerup.title %> -->
+    <%= cheerup.content %>
+  <li>
+ <% end %>
+</ul>

@@ -19,9 +19,9 @@ ActiveRecord::Schema.define(version: 20151117213053) do
   create_table "cheerups", force: :cascade do |t|
     t.string   "title"
     t.string   "content"
-    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|

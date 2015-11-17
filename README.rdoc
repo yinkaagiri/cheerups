@@ -1,5 +1,15 @@
 == README
 
+ERD Link:
+
+https://www.lucidchart.com/publicSegments/view/744f0242-6fd4-4038-bfdd-0373565cd613/image.png
+
+User Story Link:
+
+https://trello.com/b/KuRHUfKq/cheerups-user-story
+
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

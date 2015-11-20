@@ -3,8 +3,9 @@
 <ul>
  <% @cheerups.each do |cheerup| %>
   <li>
-    <!-- <%= cheerup.title %> -->
-    <%= cheerup.content %>
+    <!-- <%= link_to cheerup.user_id, cheerup_path(cheerup) %> -->
+    <%= cheerup.title %>
+    <%= link_to cheerup.content, cheerup_path(cheerup) %>
   <li>
  <% end %>
 </ul>

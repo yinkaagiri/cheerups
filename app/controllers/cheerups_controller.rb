@@ -20,6 +20,9 @@ class CheerupsController < ApplicationController
   else
     render :new
   end
+  def edit
+    @cheerup = Cheerup.find(params[:id])
+  end
 
   def update
     @cheerup = Cheerup.find(params[:id])

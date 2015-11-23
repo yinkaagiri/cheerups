@@ -1,11 +1,11 @@
-<h1>Cheerups#index</h1>
-<p>Find me in app/views/cheerups/index.html.erb</p>
+<h2><a href="/cheerup/new"> (New Cheerup)</a></h2>
+<h2>Cheerups List</h2>
 <ul>
  <% @cheerups.each do |cheerup| %>
   <li>
     <!-- <%= link_to cheerup.user_id, cheerup_path(cheerup) %> -->
-    <%= cheerup.title %>
-    <%= link_to cheerup.content, cheerup_path(cheerup) %>
+    <!-- <%= cheerup.title %> -->
+    <%= link_to cheerup.title, cheerup_path(cheerup) %>
   <li>
  <% end %>
 </ul>

@@ -8,13 +8,14 @@
 </head>
 <body>
   <h1>Cheerup!</h1>
-  
+
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
 
  <div class="user-info"
   <% if current_user %>
   <h3><%= link_to 'Signout', destroy_user_session_path, :method => :delete %></h3>
+  <h3>Welcome, <%=current_user.email %></h3>
   <% else %>
   <h3><%= link_to 'Signup', new_user_registration_path %></h3>
   <h3><%= link_to 'Login', new_user_session_path %></h3>

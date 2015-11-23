@@ -1,4 +1,5 @@
 class CheerupsController < ApplicationController
+  before_action :authenticate_user!
   def index
     @cheerups = Cheerup.all
   end

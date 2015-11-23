@@ -21,5 +21,25 @@ class CheerupsController < ApplicationController
     render :new
   end
 
+  def update
+    @cheerup = Cheerup.find(params[:id])
+    if @heerup.update(cheerup_params)
+      flash[:notice] ="#{@cheerup.name} was successfuly updated"
+      redirect_to @cheerup
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @cheerup = Cheerup.find(params[:id])
+    @cheerup.destroy
+    redirect_to cheerups_path
+end
+
+private
+def cheerup_params
+  params.require(:cheerup).permit(:title, :content, :user_id)
+end
 end
 end
